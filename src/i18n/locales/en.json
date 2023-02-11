@@ -1,0 +1,106 @@
+{
+    "nav": {
+        "home": "HOME",
+        "about": "ABOUT US",
+        "services": "SERVICES",
+        "contact": "CONTACT"
+    },
+    "home": {
+        "container-one": {
+            "header": "If you need a website for your business",
+            "t1": "This is the right place",
+            "t2": "Welcome to",
+            "t3": "Expanding quality",
+            "t4": "KNOW ABOUT US"
+        },
+        "container-two": {
+            "header": "Projects made with creativity",
+            "st1": "How can we help you?",
+            "t1": "In our service, we perform high-quality programming, in such a way that the site has the desired theme for the client, including system availability on different devices.",
+            "t2": "Also, we focus on carefully performing what is requested by our client, so that the client's satisfaction is met. If you don't know what you want yet, don't worry, we will help you discover it!",
+            "btn1-t": "CONTACT US"
+        },
+        "container-three": {
+            "header": "No worries about the maintenance of your site",
+            "t1": "In addition to developing your ideal website, our commitment goes to another level! Giving you a month and a half of warranty for the product, in case you need us, we will be here. Of course, we will always be attentive when they require our services, offering the same level of quality, professionalism, and commitment.",
+            "btn1-t": "OUR SERVICES"
+        },
+        "container-four": {
+            "header": "SURPRISE THE WORLD",
+            "header2": "WITH US",
+            "t1": "If you have something in mind, it's time to start"
+        },
+        "container-five": {
+            "header": "Our Treat With Our Clients",
+            "st1": "Respect",
+            "t1": "Respect for the person and the business is one of the fundamental values for us. That is why we will always offer an excellent quality treatment to our clients, so that they want to come back to us, and of course, for our high-quality work.",
+            "st2": "Commitment",
+            "t2": "We are 100% committed to performing exceptional work to create a great image for our clients, with completely customized and adapted sites as requested. Part of our commitment is to give the client stability and security.",
+            "st3": "Follow-up",
+            "t3": "After the client's requested work is completed, the client will receive the due follow-up, to ensure the quality and durability of the service. Also, we will always be available for contact when they need us, offering our best version.",
+            "st4": "Kindness",
+            "t4": "A friendly treatment is what they will receive at Art Development, because in work we are all on the same team."
+        }
+    },
+    "cardsCarousel": {
+        "header": "HOW CAN WE HELP YOU?",
+        "slide-one": {
+            "title": "WEB DEVELOPMENT",
+            "content": "We bring your ideas to life using JavaScript frameworks for the"
+        },
+        "slide-two": {
+            "title": "SUPPORT",
+            "content": "100% available support, not just for programs developed by us, if you have a website and don't have anyone to maintain it, you can also contact us"
+        },
+        "slide-three": {
+            "title": "HOSTING",
+            "content": "We take care of uploading your website to the servers, so you don't have to worry about that. Always up on the web!"
+        },
+        "slide-four": {
+            "title": "OTHERS",
+            "content": "Web application development, databases, console programs, among others.. Just contact us and we will help you"
+            }
+        },
+        "services":{
+            "container-one": {
+                "header": "OUR SERVICES"
+            },
+            "container-two": {
+                "header": "OUR WORK METHODOLOGY",
+                "st1": "To maintain effectiveness in our work and customer satisfaction, we are governed and work as follows:",
+                "st2": "Project",
+                "t1": "Initially, when we are contacted, we will schedule a meeting, so that they can communicate what they want us to do for the site or web application. Of course, including our help and guidance to have a more complete idea. Once that is completed, the work development starts according to what was desired.",
+                "st3": "Time",
+                "t2": "The time will vary depending on the difficulty of the project. For an informative website, the work duration can be around a month. In the case of a larger project or an application, we will talk about it when we meet with you.",
+                "st4": "Prices",
+                "t3": "The price will vary greatly depending on what the client requests",
+                "t4": "contact us here",
+                "t5": "and we will attend you.",
+                "st5": "Contract",
+                "t6": "All work guidelines will be written through a contract (project duration, payment method, support, technologies used, among other clarifications) for the company's and client's confidence and security. Both parties will have a copy of the contract.",
+                "st6": "Guarantee",
+                "t7": "Once the project is completed, we will provide a month and a half of work guarantee, this means that if we are needed during that period to correct any error or any available situation, we will be there to resolve it without any additional cost.",
+                "st7": "Support",
+                "t8": "Once the guarantee has ended, you can contact us again, either for a new change, new things you want to add to the work or any other reason. In this case, such support has an additional cost."
+            }
+        },
+        "contact": {
+            "title": "CONTACT US",
+            "ph-name": "Name",
+            "ph-email": "Email",
+            "ph-subject": "Subject",
+            "ph-message": "Message",
+            "send-btn": "SEND",
+            "submit-status-ok": "Thanks for your submission!",
+            "submit-status-error": "Please fill the form correctly.",
+            "submit-status-pending": "Sending...",
+            "submit-status-failed": "Something went wrong"     
+        },
+        "footer": {
+            "header": "You can find us at"
+        },
+    "locale": {
+        "en": "English",
+        "es": "Spanish"
+    }
+}
