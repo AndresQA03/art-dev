@@ -56,7 +56,7 @@ export default{
 <template>
     <div class="main-cont-c">
         <div class="container root">
-            <h2>{{ $t("contact.title") }}</h2>
+            <h2>CONTACTANOS</h2>
             <form ref="form">
                 <p>
                     <input 
@@ -64,7 +64,7 @@ export default{
                     :class="v$.name.$error ? 'input-err' : 'input'" 
                     name="from_name" 
                     v-model="state.name" 
-                    v-bind:placeholder="$t('contact.ph-name')" 
+                    placeholder="Nombre" 
                     autocomplete="off"
                     @blur="this.v$.$validate()">
 
@@ -75,7 +75,7 @@ export default{
                     type="email" 
                     name="user_email"
                     :class="v$.email.$error ? 'input-err' : 'input'" 
-                    v-bind:placeholder="$t('contact.ph-email')" 
+                    placeholder="Correo" 
                     @keydown.space.prevent 
                     v-model="state.email"
                     autocomplete="off"
@@ -89,7 +89,7 @@ export default{
                     :class="v$.subject.$error ? 'input-err' : 'input'" 
                     name="subject" 
                     v-model="state.subject" 
-                    v-bind:placeholder="$t('contact.ph-subject')" 
+                    placeholder="Asunto" 
                     @blur="this.v$.$validate()">
 
                     <span v-if="v$.subject.$error"> {{ v$.subject.$errors[0].$message }}</span>
@@ -100,17 +100,17 @@ export default{
                     :class="v$.message.$error ? 'input-err' : 'input'" 
                     name="message" 
                     v-model="state.message" 
-                    v-bind:placeholder="$t('contact.ph-message')" 
+                    placeholder="Mensaje" 
                     @blur="this.v$.$validate()">
 
                     <span v-if="v$.message.$error"> {{ v$.message.$errors[0].$message }}</span>
                 </p>
 
-                <button @click.prevent="submitForm" class="orange-btn"  :disabled="submitStatus === 'PENDING'">{{ $t("contact.send-btn") }}</button>
-                <p class="typo__p" v-if="submitStatus === 'OK'" style="color: green;">{{ $t("contact.submit-status-ok") }}</p>
-                <p class="typo__p" v-if="submitStatus === 'ERROR'">{{ $t("contact.submit-status-error") }}</p>
-                <p class="typo__p" v-if="submitStatus === 'PENDING'">{{ $t("contact.submit-status-pending") }}</p>
-                <p class="typo__p" v-if="submitStatus === 'FAILED'" style="color: red;">{{ $t("contact.submit-status-failed") }}</p>
+                <button @click.prevent="submitForm" class="orange-btn"  :disabled="submitStatus === 'PENDING'">ENVIAR</button>
+                <p class="typo__p" v-if="submitStatus === 'OK'" style="color: green;">Gracias por contactarnos</p>
+                <p class="typo__p" v-if="submitStatus === 'ERROR'">Por favor complete el formulario correctamente</p>
+                <p class="typo__p" v-if="submitStatus === 'PENDING'">Enviando...</p>
+                <p class="typo__p" v-if="submitStatus === 'FAILED'" style="color: red;">Algo falló</p>
             </form>
         </div>
     </div>

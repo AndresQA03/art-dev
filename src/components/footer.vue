@@ -1,10 +1,10 @@
-<script>
+<script >
 </script>
 <template>
     <footer id="footer" class=" text-white d-flex-column text-center">
         <hr class="mt-0">
         <div class="text-center">
-            <h4>{{ $t("footer.header") }}</h4>
+            <h4>Puedes encontrarnos en</h4>
             <ul class="list-unstyled list-inline">
             <li class="list-inline-item">
                 <a target="_blank" href="https://www.facebook.com/profile.php?id=100090286086887" class="sbtn btn-large mx-1" title="Facebook">

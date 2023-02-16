@@ -1,14 +1,6 @@
-<script allowjs="true">
-import LanguagesSwitcher from '@/components/LanguagesSwitcher.vue';
-import Tr from "@/i18n/translation"
+<script>
 
 export default{
-    components: {
-        LanguagesSwitcher,
-    },
-    setup(){
-        return{Tr};
-    },
     data () {
         return {
         view: {
@@ -42,26 +34,21 @@ export default{
         <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
             <ul class="navbar-nav">
             <li class="nav-item">
-                <RouterLink class="nav-link" active-class="active-link" exact-active-class="exact-active-link" aria-current="page" :to="Tr.i18nRoute({name: 'home'})">{{ $t("nav.home") }}</RouterLink>
+                <RouterLink class="nav-link" active-class="active-link" exact-active-class="exact-active-link" aria-current="page" to="/">INICIO</RouterLink>
             </li>
             <li class="nav-item">
-                <RouterLink class="nav-link" active-class="active-link" exact-active-class="exact-active-link" aria-current="page" :to="Tr.i18nRoute({name: 'services'})">{{ $t("nav.services") }}</RouterLink>
+                <RouterLink class="nav-link" active-class="active-link" exact-active-class="exact-active-link" aria-current="page" to="/services">SERVICIOS</RouterLink>
             </li>
             <li class="nav-item">
-                <RouterLink class="nav-link" active-class="active-link" exact-active-class="exact-active-link" aria-current="page" :to="Tr.i18nRoute({name: 'contact'})">{{ $t("nav.contact") }}</RouterLink>
+                <RouterLink class="nav-link" active-class="active-link" exact-active-class="exact-active-link" aria-current="page" to="/contact">CONTACTO</RouterLink>
             </li>
             </ul>
-            <LanguagesSwitcher></LanguagesSwitcher>
         </div>
         </div>
     </nav>
 </template>
 
 <style scoped lang="scss">
-.active {
-    
-}
-
 .exact-active-link {
     font-weight: bold;
     background-color: black;

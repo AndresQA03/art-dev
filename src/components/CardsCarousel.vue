@@ -12,10 +12,12 @@ export default {
   },
   computed: {
     translatedSlides() {
-      return new Array({ id: '1', icon: 'https://res.cloudinary.com/dvbrbluvn/image/upload/v1675369251/webIcon_prtcng.png', title: this.$t("cardsCarousel.slide-one.title"), content: this.$t("cardsCarousel.slide-one.content")},
-        { id: '2', icon: 'https://res.cloudinary.com/dvbrbluvn/image/upload/v1675369210/support2Icon_cv4ghc.png', title: this.$t("cardsCarousel.slide-two.title"), content: this.$t("cardsCarousel.slide-two.content") },
-        { id: '3', icon: 'https://res.cloudinary.com/dvbrbluvn/image/upload/v1675369219/hostingIcon_kdnaox.png', title: this.$t("cardsCarousel.slide-three.title"), content: this.$t("cardsCarousel.slide-three.content")},
-        { id: '4', icon: 'https://res.cloudinary.com/dvbrbluvn/image/upload/v1675369216/othersIcon_s6qcyg.png', title: this.$t("cardsCarousel.slide-four.title"), content: this.$t("cardsCarousel.slide-four.content")});
+      return new Array(
+        { id: '1', icon: 'https://res.cloudinary.com/dvbrbluvn/image/upload/v1675369251/webIcon_prtcng.png', title: 'DESARROLLO WEB', content: 'Damos vida a tus ideas utilizando frameworks de JavaScript para la elaboración de el sitio web'},
+        { id: '2', icon: 'https://res.cloudinary.com/dvbrbluvn/image/upload/v1675369210/support2Icon_cv4ghc.png', title: 'SOPORTE', content: 'Soporte 100% disponible, no solo de programas desarrollados por nosotros, si tienes un sitio y no tienes con quien darle mantenimiento, también puedes contactarnos' },
+        { id: '3', icon: 'https://res.cloudinary.com/dvbrbluvn/image/upload/v1675369219/hostingIcon_kdnaox.png', title: 'HOSTING', content: 'Nosotros nos encargamos de subir tu sitio a los servidores, de tal manera que no te tengas que preocupar de eso. Siempre arriba en la web!'},
+        { id: '4', icon: 'https://res.cloudinary.com/dvbrbluvn/image/upload/v1675369216/othersIcon_s6qcyg.png', title: 'OTROS', content: 'Desarrollo de aplicaciones web, bases de datos, programas de consola, entre otros.. Solo contactanos y te ayudaremos'}
+        );
     },
   },
   data() {
@@ -39,7 +41,7 @@ export default {
 
 <template>
     <div class="wrapper" >
-        <h1>{{ $t("cardsCarousel.header") }}</h1>
+        <h1>EN QUÉ PODEMOS AYUDARTE?</h1>
         <div style="width: 200px; border-bottom: 3px solid #F26800; margin: auto;"></div>
         <Carousel :wrap-around="true" :breakpoints="breakpoints" :autoplay="8000" >
             <Slide v-for="slide in translatedSlides" :key="slide.id">

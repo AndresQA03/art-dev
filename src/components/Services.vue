@@ -1,35 +1,34 @@
-<script>
-
+<script >
 </script>
 <template>
     <div class="container-one-s">
         <div class="bg-color">
             <div class="cont-content container">
-                <h1>{{ $t("services.container-one.header") }}</h1>
+                <h1>NUESTROS SERVICIOS</h1>
                 <img class="arrow" src="../img/downArrow.png">
             </div>
         </div>
     </div>
     <div class="container-two-s">
-        <h2 >{{ $t("services.container-two.header") }}</h2>
+        <h2 >NUESTRA METODOLOGÍA DE TRABAJO</h2>
         <div style="width: 100px; border-bottom: 3px solid #F26800; margin: auto;"></div>
-        <h4 class="cts-subtitle-two">{{ $t("services.container-two.st1") }}</h4>
+        <h4 class="cts-subtitle-two">Para mantener la efectividad en nuestro trabajo y la satisfacción del cliente, nos regimos y trabajamos de la siguiente manera:</h4>
         <div>
             <div class="c5-flex c5-ld">
-                <h4>{{ $t("services.container-two.st2") }} <img class="icons-c2" src="../img/projectsIcon.png"></h4>
-                <p>{{ $t("services.container-two.t1") }}</p>
-                <h4> {{ $t("services.container-two.st3") }}<img class="icons-c2" src="../img/timerIcon.png"></h4>
-                <p>{{ $t("services.container-two.t2") }}</p>
-                <h4> {{ $t("services.container-two.st4") }}<img class="icons-c2" src="../img/pricesIcon.png"></h4>
-                <p>{{ $t("services.container-two.t3") }} <RouterLink to="contact">{{ $t("services.container-two.t4") }}</RouterLink> {{ $t("services.container-two.t5") }}</p>
+                <h4>Proyecto <img class="icons-c2" src="../img/projectsIcon.png"></h4>
+                <p>En primera instancia, cuando nos contacten vamos a agendar una reunión, de tal manera que nos puedan comunicar qué quieren que realicemos para el sitio o aplicación web. Por supuesto, incluyendo nuestra ayuda y guía para tener una idea más completa. Una vez completado eso, se empieza el desarrollo del trabajo según lo deseado.</p>
+                <h4>Tiempo<img class="icons-c2" src="../img/timerIcon.png"></h4>
+                <p>El tiempo va a variar según la dificultad del proyecto. Para un sitio web informativo la duración del trabajo puede ser alrededor de un mes. Caso contrario de ser un trabajo más grande o una aplicación, lo hablaremos cuando se reunan con nosotros.</p>
+                <h4>Precios<img class="icons-c2" src="../img/pricesIcon.png"></h4>
+                <p>El precio va a variar drasticamente dependiendo de lo solicitado por el cliente <RouterLink to="contact">contactanos aquí</RouterLink> y te atenderemos.</p>
             </div>
             <div class="c5-flex">
-                <h4>{{ $t("services.container-two.st5") }}<img class="icons-c2" src="../img/contractIcon.png"></h4>
-                <p>{{ $t("services.container-two.t6") }}</p>
-                <h4>{{ $t("services.container-two.st6") }} <img class="icons-c2" src="../img/guaranteeIcon.png"></h4>
-                <p>{{ $t("services.container-two.t7") }}</p>
-                <h4> {{ $t("services.container-two.st7") }}<img class="icons-c2" src="../img/support2Icon.png"></h4>
-                <p>{{ $t("services.container-two.t8") }}</p>
+                <h4>Contrato<img class="icons-c2" src="../img/contractIcon.png"></h4>
+                <p>Todos los lineamientos del trabajo serán escritos mediante un contrato (duración del proyecto, método de pago, soporte, tecnologías utilizadas, entre otras aclaraciónes) para confianza y seguridad de la empresa y el cliente. De dicho contrato se tendrá una copia para ambas partes.</p>
+                <h4>Garantía <img class="icons-c2" src="../img/guaranteeIcon.png"></h4>
+                <p>Una vez finalizado el proyecto, otorgamos daremos mes y medio de garantía del trabajo, esto quiere decir que si nos necesitan durante ese lapso para corregir algún error o cualquier sitación disponible, vamos a estar para resolverlo sin ningún costo adicional.</p>
+                <h4>Soporte<img class="icons-c2" src="../img/support2Icon.png"></h4>
+                <p>Una vez terminada la garantía, pueden volver a contactarnos ya sea para un nuevo cambio, cosas nuevas que quieran agrrgar al trabajo o cualquier otro motivo. En este caso dicho soporte tiene un costo adicional.</p>
             </div>
         </div>
     </div>

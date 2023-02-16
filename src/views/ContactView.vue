@@ -1,22 +1,10 @@
-<script allowjs="true">
+<script>
 import ContactForm from '@/components/ContactForm.vue';
-
-const resetScrollMixin = {
-  watch: {
-    $route () {
-        this.$nextTick(() => {
-        window.scrollTo(0, 0)
-    })
-    }
-  }
-}
-
 
 export default{
     components: {
         ContactForm,
     },
-    mixins: [resetScrollMixin],
 }
 </script>
 <template>

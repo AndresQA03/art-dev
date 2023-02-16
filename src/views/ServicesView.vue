@@ -1,23 +1,13 @@
-<script allowjs="true">
+<script>
 import Services from '@/components/Services.vue';
 import CardsCarousel from '@/components/CardsCarousel.vue';
-
-const resetScrollMixin = {
-  watch: {
-    $route () {
-        this.$nextTick(() => {
-        window.scrollTo(0, 0)
-    })
-    }
-  }
-}
 
 export default{
     components: {
         Services,
         CardsCarousel
     },
-    mixins: [resetScrollMixin],
+
 }
 
 </script>

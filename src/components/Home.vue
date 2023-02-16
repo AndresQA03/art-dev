@@ -1,35 +1,33 @@
-<script allowjs="true">
-import Tr from "@/i18n/translation"
-
-export default{
-    setup(){
-        return{Tr};
-    },
-}
+<script >
 </script>
 <template>
 
     <div class="bg-one">
         <div style="background-color: rgba(0, 0, 0, 0.616);">
             <div class="container container-one">
-                <h1 class="c1-title">{{ $t("home.container-one.header") }}</h1>
-                <h2 class="c1-p1">{{ $t("home.container-one.t1") }}</h2>
-                <h2 class="c1-p2">{{ $t("home.container-one.t2") }}<span style="font-weight: bold"> Art Development</span></h2>
-                <h2 class="c1-p3">{{ $t("home.container-one.t3") }}</h2>
-                <a href="https://msng.link/o/?artdevelopment__=ig" target="_blank"><button class="orange-btn" role="link">{{ $t("home.container-one.t4") }}</button></a>
+                <h1 class="c1-title">Si necesitas un sitio web para tu empresa</h1>
+                <h2 class="c1-p1">Este es el lugar correcto</h2>
+                <h2 class="c1-p2">Bienvenido a<span style="font-weight: bold"> Art Development</span></h2>
+                <h2 class="c1-p3">Expandiendo la calidad</h2>
+                <a href="https://msng.link/o/?artdevelopment__=ig" target="_blank"><button class="orange-btn" role="link">CONOCE SOBRE NOSOTROS</button></a>
             </div>
         </div>
     </div>
 
     <div class="container container-two">
-        <h2 class="c2-title">{{ $t("home.container-two.header") }}</h2>
+        <h2 class="c2-title">Proyectos hechos con creatividad</h2>
         <div style="width: 100px; border-bottom: 3px solid #F26800; margin-bottom: 15px;"></div>
         <div class="c2-flex">
             <div class="c2-project-content">
-                <h4>{{ $t("home.container-two.st1") }}</h4>
-                <p>{{ $t("home.container-two.t1") }}</p>
-                <p>{{ $t("home.container-two.t2") }}</p>
-                <RouterLink class="nav-link" active-class="active-link" exact-active-class="exact-active-link" aria-current="page" :to="Tr.i18nRoute({name: 'contact'})"><button class="orange-btn">{{ $t("home.container-two.btn1-t") }}</button></RouterLink>
+                <h4>Con qué te ayudaremos?</h4>
+                <p>En nuestro servicio, realizamos programación de alta calidad, de tal manera que el sitio tenga la temática deseada por el cliente, incluyendo disponibilidad del sistema en distintos dispositivos.</p>
+                <p>También, nos enfocamos en realizar detalladamente lo solicitado por nuestro cliente, de manera que se cumpla la satisfacción de el mismo. Si aún no sabes bien lo que quieres, no te preocupes, nosotros te vamos a ayudar a descubrirlo!</p>
+                <RouterLink 
+                class="nav-link" 
+                active-class="active-link" 
+                exact-active-class="exact-active-link" 
+                aria-current="page" 
+                to="/contact"><button class="orange-btn">CONTACTANOS</button></RouterLink>
             </div>
             <div class="c2-project-content-img">
                 <img class="c2-img-creativity" src="../img/creativity.jpg">
@@ -39,43 +37,48 @@ export default{
 
     <div class="container-three" style="">
         <div class="container">
-            <h4>{{ $t("home.container-three.header") }}</h4>
+            <h4>Sin preocupaciones por el mantenimeinto de tu sitio</h4>
             <div style="width: 200px; border-bottom: 3px solid #F26800; margin: auto;"></div>
-            <p>{{ $t("home.container-three.t1") }}</p>
-            <RouterLink class="nav-link" active-class="active-link" exact-active-class="exact-active-link" aria-current="page" :to="Tr.i18nRoute({name: 'services'})"><button class=" btn-services">{{ $t("home.container-three.btn1-t") }}</button></RouterLink>
+            <p>Además de desarrollar tu sitio web ideal, nuestro compromiso va a otro nivel! Dandote mes y medio de garantía para el producto, en caso de que nos necesites, aquí vamos a estar. Por supuesto, vamos a estar siempre atentos para cuando requieran de nuestros servicios, ofreciendo el mismo nivel de calidad, profesionalismo y compromiso.</p>
+            <RouterLink 
+            class="nav-link" 
+            active-class="active-link" 
+            exact-active-class="exact-active-link" 
+            aria-current="page" 
+            to="/services"><button class=" btn-services">NUESTROS SERVICIOS</button></RouterLink>
         </div>
     </div>
 
     <div class="container-four">
         <div class="c4-align">
            <div>
-                <h1>{{ $t("home.container-four.header") }} <span style="color: #F26800; font-weight: bold;">{{ $t("home.container-four.header2") }}</span></h1>
-                <h3>{{ $t("home.container-four.t1") }}</h3>
+                <h1>IMPRESIONA AL MUNDO <span style="color: #F26800; font-weight: bold;">CON NOSOTROS</span></h1>
+                <h3>Si tienes algo en mente, es hora de comenzar</h3>
            </div>
         </div>
     </div>
 
     <div class="container-five">
         <div class="container">
-            <h2 class="title-two">{{ $t("home.container-five.header") }}</h2>
+            <h2 class="title-two">Nuestro Trato Con Nuestros Clientes</h2>
             <div style="width: 100px; border-bottom: 3px solid #F26800; margin: auto;"></div>
         </div>
         <div style="margin-top: 30px;">
             <div class="c5-flex c5-ld">
                 <img class="treat-icons" src="../img/respect.png">
-                <h4 class="treat-subtitles">{{ $t("home.container-five.st1") }}</h4>
-                <p class="p-border">{{ $t("home.container-five.t1") }}</p>
+                <h4 class="treat-subtitles">Respeto</h4>
+                <p class="p-border">El respeto a la persona y al negocio es uno de los valores fundamentales para nosotros. Por eso, siempre vamos a ofrecer un trato de excelente calidad a nuestros clientes, para que tengan ganas de volver a nosotros, y por supuesto, por nuestro trabajo de calidad.</p>
                 <img class="treat-icons" src="../img/commitment.png">
-                <h4 class="treat-subtitles">{{ $t("home.container-five.st2") }}</h4>
-                <p>{{ $t("home.container-five.t2") }}</p>
+                <h4 class="treat-subtitles">Compromiso</h4>
+                <p>Estamos 100% comprometidos a realizar trabajos excepcionales para crear una gran imagen a nuestros clientes, con sitios totalmente personalizados y adaptados según se solicite. Parte de nuestro compromiso es darle estabilidad y seguridad al cliente.</p>
             </div>
             <div class="c5-flex">
                 <img class="treat-icons" src="../img/support.png">
-                <h4 class="treat-subtitles">{{ $t("home.container-five.st3") }}</h4>
-                <p class="p-border">{{ $t("home.container-five.t3") }}</p>
+                <h4 class="treat-subtitles">Seguimiento</h4>
+                <p class="p-border">Siempre al finalizar el trabajo solicitado por el cliente, se le va a dar el debido seguimiento, para asegurar la calidad y durabilidad del servicio. También, siempre vamos a estar disponibles para que nos contacten cuando nos necesiten, ofreciendo nuestra mejor versión.</p>
                 <img class="treat-icons" src="../img/kindness.png">
-                <h4 class="treat-subtitles">{{ $t("home.container-five.st4") }}</h4>
-                <p>{{ $t("home.container-five.t4") }}</p>
+                <h4 class="treat-subtitles">Amabilidad</h4>
+                <p>Un trato amable es lo que van a recibir en Art Development, porque en el trabajo somos todos un mismo equipo.</p>
             </div>
         </div>
     </div>

@@ -1,17 +1,7 @@
-<script allowjs="true">
+<script>
 import Home from '@/components/Home.vue'
 import Email from '@/components/ContactForm.vue'
 import CardsCarousel from '@/components/CardsCarousel.vue'
-
-const resetScrollMixin = {
-  watch: {
-    $route () {
-      this.$nextTick(() => {
-        window.scrollTo(0, 0)
-      })
-    }
-  }
-}
 
 export default{
     components: {
@@ -19,7 +9,7 @@ export default{
         Email,
         CardsCarousel
     },
-    mixins: [resetScrollMixin],
+
 }
 </script>
 <template>
