@@ -16,10 +16,6 @@ export default{
 <style scoped>
 .space{
     height: 100px;
-    background-color: #29291e;
+    background-color: #1f1e29;
 }
-/* .space2{
-    height: 100vh;
-    background-color: #14140F;
-} */
 </style>

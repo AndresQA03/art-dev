@@ -51,7 +51,7 @@
 
     <div class="container-four">
         <div class="c4-align">
-           <div>
+           <div class="container">
                 <h1>IMPRESIONA AL MUNDO <span style="color: #F26800; font-weight: bold;">CON NOSOTROS</span></h1>
                 <h3>Si tienes algo en mente, es hora de comenzar</h3>
            </div>
@@ -170,7 +170,7 @@
 }
 .container-three{
     text-align: center; 
-    background-color: #29291e; 
+    background-color: #1f1e29; 
     padding: 50px 0px 100px 0px; 
     margin-top: 10px;
     color: white;

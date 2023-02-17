@@ -36,10 +36,6 @@ export default{
             if (this.v$.$error) {
                 this.submitStatus = 'ERROR'
             } else {
-                // this.submitStatus = 'PENDING'
-                // setTimeout(() => {
-                // this.submitStatus = 'OK'
-                // }, 500)
                 this.submitStatus = 'PENDING'
                 emailjs.sendForm('service_xgu0af9', 'template_92jwz3n', this.$refs.form, 'r5dMtbjK3ir0VDD2v')
                 .then(() => {
@@ -68,7 +64,7 @@ export default{
                     autocomplete="off"
                     @blur="this.v$.$validate()">
 
-                    <span v-if="v$.name.$error"> {{ v$.name.$errors[0].$message }}</span>
+                    <span v-if="v$.name.$error"> {{ v$.name.$errors[0].$message }}*</span>
                 </p>
                 <p>
                     <input 
@@ -81,7 +77,7 @@ export default{
                     autocomplete="off"
                     @blur="this.v$.$validate()">
 
-                    <span v-if="v$.email.$error"> {{ v$.email.$errors[0].$message }}</span>
+                    <span v-if="v$.email.$error"> {{ v$.email.$errors[0].$message }}*</span>
                 </p>
                 <p>
                     <input 
@@ -92,7 +88,7 @@ export default{
                     placeholder="Asunto" 
                     @blur="this.v$.$validate()">
 
-                    <span v-if="v$.subject.$error"> {{ v$.subject.$errors[0].$message }}</span>
+                    <span v-if="v$.subject.$error"> {{ v$.subject.$errors[0].$message }}*</span>
                 </p>
                 <p>
                     <input 
@@ -103,7 +99,7 @@ export default{
                     placeholder="Mensaje" 
                     @blur="this.v$.$validate()">
 
-                    <span v-if="v$.message.$error"> {{ v$.message.$errors[0].$message }}</span>
+                    <span v-if="v$.message.$error"> {{ v$.message.$errors[0].$message }}*</span>
                 </p>
 
                 <button @click.prevent="submitForm" class="orange-btn"  :disabled="submitStatus === 'PENDING'">ENVIAR</button>
@@ -130,7 +126,7 @@ span{
     color: red;
 }
 .main-cont-c{
-    background-color: #29291e;
+    background-color: #1f1e29;
     display: grid;
     place-items: center;
     padding-top: 100px;
@@ -140,34 +136,35 @@ span{
   background-color: #ffffff;
   box-shadow: silver;
   padding: 30px;
-  border-radius: 20px;
   text-align: center;
   width: 50%;
 }
 .input {
-  border: none;
   outline: none;
-  border-bottom: 1px solid #ddd;
+  border: none;
+  border-radius: 20px;
+  border: 2px solid rgba(128, 128, 128, 0.11);
   font-size: 1em;
-  padding: 5px 0;
+  padding: 5px 0 5px 10px;
   margin: 10px 0 5px 0;
   width: 100%;
 }
 .input-err{
-  border: none;
   outline: none;
-  border-bottom: 1px solid #ff0000;
+  border: none;
+  border-radius: 20px;
+  border: 2px solid rgb(255, 0, 0);
   font-size: 1em;
-  padding: 5px 0;
+  padding: 5px 0 5px 10px;
   margin: 10px 0 5px 0;
   width: 100%;
 }
+
 @media screen and (max-width: 1000px){
     .root {
     background-color: #ffffff;
     box-shadow: silver;
     padding: 30px;
-    border-radius: 20px;
     text-align: center;
     width: 70%;
     }
@@ -178,7 +175,6 @@ span{
     background-color: #ffffff;
     box-shadow: silver;
     padding: 30px;
-    border-radius: 20px;
     text-align: center;
     width: 90%;
     }
@@ -189,7 +185,6 @@ span{
     background-color: #ffffff;
     box-shadow: silver;
     padding: 30px;
-    border-radius: 20px;
     text-align: center;
     width: 80%;
     }

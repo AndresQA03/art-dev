@@ -32,7 +32,7 @@
 
 <style scoped>
 #footer{
-    background-color: #29291e;
+    background-color: #14140F;
     padding-top: 50px;
 }
 </style>

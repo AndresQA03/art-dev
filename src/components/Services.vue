@@ -9,10 +9,10 @@
             </div>
         </div>
     </div>
-    <div class="container-two-s">
+    <div class="container-two-s container">
         <h2 >NUESTRA METODOLOGÍA DE TRABAJO</h2>
         <div style="width: 100px; border-bottom: 3px solid #F26800; margin: auto;"></div>
-        <h4 class="cts-subtitle-two">Para mantener la efectividad en nuestro trabajo y la satisfacción del cliente, nos regimos y trabajamos de la siguiente manera:</h4>
+        <h3 class="cts-subtitle-two">Para mantener la efectividad en nuestro trabajo y la satisfacción del cliente, nos regimos y trabajamos de la siguiente manera:</h3>
         <div>
             <div class="c5-flex c5-ld">
                 <h4>Proyecto <img class="icons-c2" src="../img/projectsIcon.png"></h4>
