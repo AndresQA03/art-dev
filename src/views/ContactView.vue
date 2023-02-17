@@ -1,15 +1,15 @@
 <script>
-import ContactForm from '@/components/ContactForm.vue';
+import Email from '@/components/ContactForm.vue';
 
 export default{
     components: {
-        ContactForm,
+        Email,
     },
 }
 </script>
 <template>
     <div class="space"></div>
-    <ContactForm></ContactForm>
+    <Email></Email>
     <div class="space2"></div>
 </template>
 
