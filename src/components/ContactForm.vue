@@ -2,7 +2,7 @@
 import emailjs from 'emailjs-com';
 import useValidate from '@vuelidate/core'
 import {required, email} from '@vuelidate/validators'
-import {reactive, computed, ref} from 'vue'
+import {reactive, computed} from 'vue'
 
 export default{
     data(){

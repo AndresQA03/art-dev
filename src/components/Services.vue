@@ -1,4 +1,11 @@
 <script >
+import CardsCarousel from './CardsCarousel.vue'
+
+export default{
+    components: {
+        CardsCarousel
+    }
+}
 </script>
 <template>
     <div class="container-one-s">
@@ -9,6 +16,7 @@
             </div>
         </div>
     </div>
+    <CardsCarousel></CardsCarousel>
     <div class="container-two-s container">
         <h2 >NUESTRA METODOLOGÍA DE TRABAJO</h2>
         <div style="width: 100px; border-bottom: 3px solid #F26800; margin: auto;"></div>
@@ -20,7 +28,7 @@
                 <h4>Tiempo<img class="icons-c2" src="../img/timerIcon.png"></h4>
                 <p>El tiempo va a variar según la dificultad del proyecto. Para un sitio web informativo la duración del trabajo puede ser alrededor de un mes. Caso contrario de ser un trabajo más grande o una aplicación, lo hablaremos cuando se reunan con nosotros.</p>
                 <h4>Precios<img class="icons-c2" src="../img/pricesIcon.png"></h4>
-                <p>El precio va a variar drasticamente dependiendo de lo solicitado por el cliente <RouterLink to="contact">contactanos aquí</RouterLink> y te atenderemos.</p>
+                <p>Con mucho gusto le brindaremos toda la información necesaria y detallada, a fin de que pueda conocer en profundidad nuestros servicios, y los costos asociados a los mismos. En este sentido, nuestros profesionales altamente capacitados estarán disponibles para atender sus requerimientos y ofrecer soluciones a medida. No dude en ponerse en contacto con nosotros para que podamos ayudarlo a alcanzar sus objetivos con el mejor servicio posible.</p>
             </div>
             <div class="c5-flex">
                 <h4>Contrato<img class="icons-c2" src="../img/contractIcon.png"></h4>
