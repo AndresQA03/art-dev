@@ -28,7 +28,4 @@ npm run dev
 npm run build
 ```
 # art-dev
-# art-dev
-# art-dev
-# art-dev
-# art-dev
+http://artdevelopment-001-site1.gtempurl.com/en
